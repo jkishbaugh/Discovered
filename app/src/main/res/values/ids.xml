@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type ="id" name="collab"/>
+    <item type ="id" name="profile"/>
+    <item type="id" name="stats"/>
+    <item type="id" name="inspired"/>
+</resources>

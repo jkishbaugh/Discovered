@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Discovered</string>
+    <string name="musician">Musician</string>
+    <string name="listener">Listener</string>
+    <string name="title_activity_listener">listenerActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
