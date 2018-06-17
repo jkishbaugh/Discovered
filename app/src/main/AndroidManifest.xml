@@ -18,10 +18,32 @@
         </activity>
         <activity
             android:name=".listenerActivity"
-            android:label="@string/title_activity_listener" />
-        <activity android:name=".musicianActivity" />
-        <activity android:name=".songActivity" />
-        <activity android:name=".nowPlaying"></activity>
+            android:label="@string/title_activity_listener" android:parentActivityName=".MainActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.android.discovered.MainActivity"/>
+        </activity>
+        <activity android:name=".musicianActivity"
+            android:label="@string/title_activity_musician"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.discovered.MainActivity"/>
+        </activity>
+        <activity android:name=".songActivity"
+            android:label="@string/title_activity_song"
+            android:parentActivityName=".listenerActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.android.discovered.listenerActivity"/>
+        </activity>
+        <activity android:name=".nowPlaying"
+            android:label="@string/title_now_playing"
+            android:parentActivityName=".songActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.discovered.songActivity"/>
+        </activity>
     </application>
 
 </manifest>

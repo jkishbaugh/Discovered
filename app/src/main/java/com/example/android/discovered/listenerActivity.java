@@ -24,6 +24,8 @@ public class listenerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listener);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         ArrayList<Genre> genres = new ArrayList<Genre>();
         genres.add(new Genre("Blues", R.drawable.harmonica));
         genres.add(new Genre("Chrisitian", R.drawable.christian));

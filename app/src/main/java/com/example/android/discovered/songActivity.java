@@ -16,6 +16,8 @@ public class songActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("Song1", "some Artist"));
         songs.add(new Song("song2", "anonymous"));

@@ -17,11 +17,13 @@ public class musicianActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_musician);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         ArrayList<Genre> musicianMenu = new ArrayList<>();
         musicianMenu.add(new Genre("Edit Profile", R.drawable.profile));
         musicianMenu.add(new Genre("Find Collab", R.drawable.collab));
         musicianMenu.add(new Genre("Check stats", R.drawable.chart));
-        musicianMenu.add(new Genre("Get Inspirad", R.drawable.music_note_multiple));
+        musicianMenu.add(new Genre("Get Inspired", R.drawable.music_note_multiple));
 
         GenreAdapter musicianAdapter = new GenreAdapter(this, R.layout.genre_list_item, musicianMenu);
 

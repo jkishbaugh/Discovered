@@ -12,6 +12,8 @@ public class nowPlaying extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_now_playing);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         songName = findViewById(R.id.song_name);
         artistName = findViewById(R.id.artist_name);
         Bundle extras = getIntent().getExtras();
