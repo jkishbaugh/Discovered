@@ -38,7 +38,7 @@ public class songActivity extends AppCompatActivity {
                 String tempSongName = (String) currentSong.getSongTitle();
                 String tempArtistName = (String) currentSong.getArtistName();
 
-                Intent songIntent = new Intent(songActivity.this, nowPlaying.class);
+                Intent songIntent = new Intent(songActivity.this, NowPlayingActivity.class);
                 songIntent.putExtra("key1", tempSongName);
                 songIntent.putExtra("key2", tempArtistName);
                 startActivity(songIntent);

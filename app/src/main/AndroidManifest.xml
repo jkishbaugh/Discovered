@@ -37,7 +37,7 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value="com.example.android.discovered.listenerActivity"/>
         </activity>
-        <activity android:name=".nowPlaying"
+        <activity android:name=".NowPlayingActivity"
             android:label="@string/title_now_playing"
             android:parentActivityName=".songActivity">
             <meta-data
