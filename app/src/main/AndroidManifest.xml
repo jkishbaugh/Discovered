@@ -17,32 +17,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".listenerActivity"
+            android:name=".ListenerActivity"
             android:label="@string/title_activity_listener" android:parentActivityName=".MainActivity">
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="com.example.android.discovered.MainActivity"/>
         </activity>
-        <activity android:name=".musicianActivity"
+        <activity android:name=".MusicianActivity"
             android:label="@string/title_activity_musician"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.discovered.MainActivity"/>
         </activity>
-        <activity android:name=".songActivity"
+        <activity android:name=".SongActivity"
             android:label="@string/title_activity_song"
-            android:parentActivityName=".listenerActivity">
+            android:parentActivityName=".ListenerActivity">
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.android.discovered.listenerActivity"/>
+            android:value="com.example.android.discovered.ListenerActivity"/>
         </activity>
         <activity android:name=".NowPlayingActivity"
             android:label="@string/title_now_playing"
-            android:parentActivityName=".songActivity">
+            android:parentActivityName=".SongActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.discovered.songActivity"/>
+                android:value="com.example.android.discovered.SongActivity"/>
         </activity>
     </application>
 

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent listenerIntent = new Intent(MainActivity.this, listenerActivity.class);
+                Intent listenerIntent = new Intent(MainActivity.this, ListenerActivity.class);
                 startActivity(listenerIntent);
             }
         });
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         musicianButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent musicianIntent = new Intent(MainActivity.this, musicianActivity.class);
+                Intent musicianIntent = new Intent(MainActivity.this, MusicianActivity.class);
                 startActivity(musicianIntent);
             }
         });

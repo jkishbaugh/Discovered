@@ -6,6 +6,6 @@
     android:layout_height="match_parent"
     android:layout_margin="@dimen/activity_horizontal_margin"
     android:background="@color/primaryDarkColor"
-    tools:context=".songActivity">
+    tools:context=".SongActivity">
 
 </ListView>

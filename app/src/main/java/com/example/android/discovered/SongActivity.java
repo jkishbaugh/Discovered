@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class songActivity extends AppCompatActivity {
+public class SongActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class songActivity extends AppCompatActivity {
                 String tempSongName = (String) currentSong.getSongTitle();
                 String tempArtistName = (String) currentSong.getArtistName();
 
-                Intent songIntent = new Intent(songActivity.this, NowPlayingActivity.class);
+                Intent songIntent = new Intent(SongActivity.this, NowPlayingActivity.class);
                 songIntent.putExtra("key1", tempSongName);
                 songIntent.putExtra("key2", tempArtistName);
                 startActivity(songIntent);

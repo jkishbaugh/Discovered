@@ -1,6 +1,5 @@
 package com.example.android.discovered;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,7 +9,7 @@ import android.widget.GridView;
 
 import java.util.ArrayList;
 
-public class musicianActivity extends AppCompatActivity {
+public class MusicianActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +33,7 @@ public class musicianActivity extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent musicianIntent = new Intent(musicianActivity.this, listenerActivity.class);
+                Intent musicianIntent = new Intent(MusicianActivity.this, ListenerActivity.class);
                 startActivity(musicianIntent);
             }
         });

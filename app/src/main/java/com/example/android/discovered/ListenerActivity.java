@@ -1,22 +1,15 @@
 package com.example.android.discovered;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.concurrent.CopyOnWriteArrayList;
 
-public class listenerActivity extends AppCompatActivity {
+public class ListenerActivity extends AppCompatActivity {
 
 
     @Override
@@ -53,7 +46,7 @@ public class listenerActivity extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent genreIntent = new Intent(listenerActivity.this, songActivity.class);
+                Intent genreIntent = new Intent(ListenerActivity.this, SongActivity.class);
                 startActivity(genreIntent);
             }
         });
